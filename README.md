@@ -72,3 +72,5 @@ For all of the below functions except for ```clear()```: O(n) complexity is in r
     - calling this function with no parameters will make 'cursor = cursor->next', essentially advancing the 'front' of the list by one node O(1).
     - setting i to any non-negative int will make 'cursor = cursor->next' i times.
     - calling this function on an empty list will cause a segmentation fault
+
+- ```setCursor(CNode<T> *node)```: Sets the cursor to the provided node. Will break your list if you set it to a node that is not in the list. O(1). 

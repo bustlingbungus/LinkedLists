@@ -111,6 +111,16 @@ class CList
             for (int j=0;j<i;j++) cursor = cursor->next; 
         }
 
+        /* Sets the cursor to the specified pointer */
+        void setCursor(CNode<T> *node) {
+            cursor = node;
+        }
+
+        void operator=(const CList<T>& other) {
+            cursor = other.back_ptr();
+            n = other.size();
+        }
+
     private:
 
         /* the current position in the list */
