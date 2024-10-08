@@ -93,6 +93,10 @@ class CList
 
         /* Returns the front element */
         T front() const { return at(0)->elem; }
+        /* Returns the back pointer */
+        CNode<T>* back_ptr() const { return cursor; }
+        /* Returns the element at the back pointer */
+        T back() const { return cursor->elem; }
 
         /* Returns the element i nodes fron the front */
         T operator[](const int& i) const { return at(i)->elem; }

@@ -55,6 +55,12 @@ For all of the below functions except for ```clear()```: O(n) complexity is in r
     - calling this function on an empty list will cause a segmentation fault
 
 - ```front() const```: returns the element at the front of the list, calls 'at(0)->elem', O(1)
+    - calling this function on an empty list will cause a segmentation fault
+
+- ```back_ptr() const```: returns the cursor - a pointer to the 'back' of the list, O(1)
+
+- ```back() const```: returns the element stored at 'cursor', O(1)
+    - calling this function on an empty list will cause a segmentation fault
 
 - ```operator[](const int& i)```: Use the '[]' operator as you would for an array, it will return the element i nodes form the front. Returns 'at(i)->elem'. O(n)
     - calling this function on an empty list will cause a segmentation fault
