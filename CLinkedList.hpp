@@ -66,6 +66,7 @@ class CList
                 cursor = nullptr;
             } else {
                 CNode<T> *o = node->next;
+                if (o == cursor) cursor = cursor->next;
                 node->next = o->next;
                 delete o;
             }
