@@ -58,6 +58,7 @@ For all of the below functions except for ```clear()```: O(n) complexity is in r
 
 - ```operator[](const int& i)```: Use the '[]' operator as you would for an array, it will return the element i nodes form the front. Returns 'at(i)->elem'. O(n)
     - calling this function on an empty list will cause a segmentation fault
+    - this function cannot be used for element assignment lise with arrays. You cannot do something like `clist[i] = elem`, use `set(i, elem)`, instead
 
 - ```clear()```: removes all nodes from the list, and deallocates their memory, O(n)
 
