@@ -1,8 +1,6 @@
 #ifndef CLINKEDLIST_HPP
 #define CLINKEDLIST_HPP
 
-#include <iostream>
-
 /* A Node in a CLinkedList */
 template <typename T>
 struct CNode
